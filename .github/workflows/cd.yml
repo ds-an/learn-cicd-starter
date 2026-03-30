@@ -21,7 +21,7 @@ jobs:
       - name: Build the app 
         run: sh ${{ github.workspace }}/scripts/buildprod.sh
 
-      - id: 'Auth gloud'
+      - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
